@@ -45,14 +45,16 @@ namespace BananaFarmer.Tower.Upgrades
             public override void ApplyUpgrade(TowerModel towerModel)
             {
                 towerModel.ApplyDisplay<Displays.TowerDisplays.BananaDealerDisplay>();
-                AttackModel bananaFarmAttackModel = default;
+                AttackModel? bananaFarmAttackModel = default;
                 foreach (var attackModel in towerModel.GetAttackModels())
                 {
                     if (!attackModel.name.Equals("BananaFarm_"))
                         continue;
                     bananaFarmAttackModel = attackModel;
                 }
-                bananaFarmAttackModel.weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 12;
+
+                if (bananaFarmAttackModel != null)
+                    bananaFarmAttackModel.weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 12;
             }
 
 
@@ -72,7 +74,7 @@ namespace BananaFarmer.Tower.Upgrades
             {
                 towerModel.AddBehavior(new MonkeyCityIncomeSupportModel("_MonkeyCityIncomeSupport", true, 1.15f, null, "MonkeyCityBuff", "BuffIconVillagexx4"));
                 towerModel.ApplyDisplay<Displays.TowerDisplays.BananaBankerDisplay>();
-                AttackModel bananaFarmAttackModel = default;
+                AttackModel? bananaFarmAttackModel = default;
                 foreach (var attackModel in towerModel.GetAttackModels())
                 {
                     if (!attackModel.name.Equals("BananaFarm_"))
@@ -80,10 +82,13 @@ namespace BananaFarmer.Tower.Upgrades
                     bananaFarmAttackModel = attackModel;
                         break;
                 }
-                bananaFarmAttackModel.weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 10;
-                bananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().maximum = 40;
-                bananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().minimum = 40;
 
+                if (bananaFarmAttackModel != null)
+                {
+                    bananaFarmAttackModel.weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 10;
+                    bananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().maximum = 40;
+                    bananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().minimum = 40;
+                }
             }
 
 
@@ -102,17 +107,20 @@ namespace BananaFarmer.Tower.Upgrades
             {
                 towerModel.GetBehavior<MonkeyCityIncomeSupportModel>().incomeModifier = 1.5f;
                 towerModel.ApplyDisplay<Displays.TowerDisplays.BananaStonksDisplay>();
-                AttackModel BananaFarmAttackModel = default;
+                AttackModel? BananaFarmAttackModel = default;
                 foreach (var attackModel in towerModel.GetAttackModels())
                 {
                     if (!attackModel.name.Equals("BananaFarm_"))
                         continue;
                     BananaFarmAttackModel = attackModel;
                 }
-                BananaFarmAttackModel.weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 15;
-                BananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().maximum = 70;
-                BananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().minimum = 70;
-                
+
+                if (BananaFarmAttackModel != null)
+                {
+                    BananaFarmAttackModel.weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 15;
+                    BananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().maximum = 70;
+                    BananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().minimum = 70;
+                }
             }
 
 
@@ -131,16 +139,21 @@ namespace BananaFarmer.Tower.Upgrades
             {
                 towerModel.GetBehavior<MonkeyCityIncomeSupportModel>().incomeModifier = 3f;
                 towerModel.ApplyDisplay<Displays.TowerDisplays.MonkeyWallStreetDisplay>();
-                AttackModel BananaFarmAttackModel = default;
+                AttackModel? BananaFarmAttackModel = default;
                 foreach (var attackModel in towerModel.GetAttackModels())
                 {
                     if (!attackModel.name.Equals("BananaFarm_"))
                         continue;
                     BananaFarmAttackModel = attackModel;
                 }
-                BananaFarmAttackModel.weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 30;
-                BananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().maximum = 70;
-                BananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().minimum = 70;
+
+                if (BananaFarmAttackModel != null)
+                {
+                    BananaFarmAttackModel.weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 30;
+                    BananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().maximum = 70;
+                    BananaFarmAttackModel.weapons[0].projectile.GetBehavior<CashModel>().minimum = 70;
+                }
+
                 towerModel.AddBehavior(Game.instance.model.GetTowerFromId("MonkeyVillage-005").GetAttackModel().Duplicate());
             }
         }
