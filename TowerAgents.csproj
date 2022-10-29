@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{561A9956-B233-4A83-87E5-D886071BC206}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BananaFarmerTower</RootNamespace>
+    <AssemblyName>BananaFarmerTower</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\BloonsTD6\btd6-ml-framework\MelonLoader\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BloonsTD6 Mod Helper">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\Mods\BloonsTD6 Mod Helper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Il2CppSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\BloonsTD6\btd6-ml-framework\MelonLoader\MelonLoader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\BloonsTD6\btd6-ml-framework\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\BloonsTD6\btd6-ml-framework\MelonLoader\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\BloonsTD6\btd6-ml-framework\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Il2CppImageConversionManager">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\BloonsTD6\btd6-ml-framework\MelonLoader\Managed\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\BloonsTD6\btd6-ml-framework\MelonLoader\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananaFarmer-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananaFarmer-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananaSight-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananOculars-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananaDealer-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RoboFarmer-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CosmicBananananananananana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\10FtPitchfork-Icon.png" />
+    <EmbeddedResource Include="Resources\BananPhone-Icon.png" />
+    <EmbeddedResource Include="Resources\CyborgFarmer-Icon.png" />
+    <EmbeddedResource Include="Resources\CyborgFarmer_Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RoboFarmer_Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Paragon-Icon.png" />
+    <EmbeddedResource Include="Resources\Paragon_Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Paragon-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananaBanker-Icon.png" />
+    <EmbeddedResource Include="Resources\HelpingHand-Icon.png" />
+    <EmbeddedResource Include="Resources\MonkeyWallStreet-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananaStonks-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananaGun-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananaFarmer-002-Portrait.png" />
+    <EmbeddedResource Include="Resources\BananaFarmer-003-Portrait.png" />
+    <EmbeddedResource Include="Resources\BananaFarmer-004-Portrait.png" />
+    <EmbeddedResource Include="Resources\BananaFarmer-005-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananaBankerHat_Texture.png" />
+    <EmbeddedResource Include="Resources\BananaDealerHat_Texture.png" />
+    <EmbeddedResource Include="Resources\BananaStonksHat_Texture.png" />
+    <EmbeddedResource Include="Resources\MonkeyWallStreetHat_Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RedHat_Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Suit_Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RedHat-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RedHatYellowRim_Texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RedHatYellowRim-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BananaPeel.png" />
+    <EmbeddedResource Include="Resources\GoldenBananaPeel.png" />
+    <EmbeddedResource Include="Resources\RottenBananaPeel.png" />
+    <EmbeddedResource Include="Resources\SlipperyBananaPeel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
