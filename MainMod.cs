@@ -11,7 +11,7 @@ using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using MelonLoader;
-using ModHelperData = BananaFarmer.Tower.ModHelperData;
+using ModHelperData = BananaFarmer.ModHelperData;
 
 #endregion
 
