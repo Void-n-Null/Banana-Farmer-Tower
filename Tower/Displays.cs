@@ -1,5 +1,5 @@
-﻿using Assets.Scripts.Unity;
-using Assets.Scripts.Unity.Display;
+﻿using Il2CppAssets.Scripts.Unity;
+using Il2CppAssets.Scripts.Unity.Display;
 using BTD_Mod_Helper.Api.Display;
 using UnityEngine;
 using static BananaFarmer.Helper;

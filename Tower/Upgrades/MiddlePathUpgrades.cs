@@ -1,12 +1,14 @@
-﻿using Assets.Scripts.Models.Towers;
-using Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors;
-using Assets.Scripts.Models.Towers.Projectiles;
-using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
-using Assets.Scripts.Models.Towers.Weapons;
-using Assets.Scripts.Unity;
+﻿using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors;
+using Il2CppAssets.Scripts.Models.Towers.Projectiles;
+using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
+using Il2CppAssets.Scripts.Models.Towers.Weapons;
+using Il2CppAssets.Scripts.Unity;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using MainTower = BananaFarmer.MainMod.MainTower;
+using Il2Cpp;
+
 namespace BananaFarmer.Tower.Upgrades
 {
 
@@ -94,7 +96,7 @@ namespace BananaFarmer.Tower.Upgrades
             public override int Tier => 4;
             public override string Name => "PotassiumSpeed";
             public override string DisplayName => "Potassium Speed";
-            public override int Cost => 5000;
+            public override int Cost => 6500;
             public override string Description => "Doubles banana fire speed and makes Bloons travel backwards 2/3 as fast.";
             public override string Icon => "BananaSight-Icon";
             public override string Portrait => "RedHat-Portrait";

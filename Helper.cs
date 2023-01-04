@@ -1,8 +1,8 @@
 ﻿using System.IO;
-using Assets.Scripts.Models.Towers;
-using Assets.Scripts.Models.Towers.Behaviors.Attack;
-using Assets.Scripts.Unity;
-using Assets.Scripts.Unity.Display;
+using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack;
+using Il2CppAssets.Scripts.Unity;
+using Il2CppAssets.Scripts.Unity.Display;
 using BTD_Mod_Helper.Extensions;
 using UnityEngine;
 
@@ -39,7 +39,7 @@ namespace BananaFarmer
         //     return udn;
         // }
 
-        public static Texture2D Duplicate(this Texture texture, Rect? proj = null)
+/*        public static Texture2D Duplicate(this Texture texture, Rect? proj = null)
         {
                 if (proj == null) proj = new Rect(0, 0, texture.width, texture.height);
                 var rect = (Rect)proj;
@@ -54,11 +54,11 @@ namespace BananaFarmer
                 RenderTexture.active = null;
                 return texture2;
         }
-        public static void CustomSaveToPng(string Path, Texture tex)
+*//*        publ*//*ic static void CustomSaveToPng(string Path, Texture tex)
         {
             Texture2D texture = tex.Duplicate();
             File.WriteAllBytes($"{Path}.png", ImageConversion.EncodeToPNG(texture));
-        }
+        }*/
     }
 }
 

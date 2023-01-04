@@ -1,9 +1,9 @@
-﻿using Assets.Scripts.Models.Towers;
-using Assets.Scripts.Models.Towers.Behaviors;
-using Assets.Scripts.Models.Towers.Behaviors.Attack;
-using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
-using Assets.Scripts.Models.Towers.Weapons.Behaviors;
-using Assets.Scripts.Unity;
+﻿using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack;
+using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
+using Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors;
+using Il2CppAssets.Scripts.Unity;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using MainTower = BananaFarmer.MainMod.MainTower;
@@ -66,7 +66,7 @@ namespace BananaFarmer.Tower.Upgrades
             public override int Tier => 3;
             public override string Name => "BananaBanker";
             public override string DisplayName => "Banana Banker";
-            public override int Cost => 2700;
+            public override int Cost => 3500;
             public override string Description => "All farms and farmers in range get 15% more income.";
             public override string Icon => "BananaBanker-Icon";
             public override string Portrait => "BananaFarmer-003-Portrait";
@@ -99,7 +99,7 @@ namespace BananaFarmer.Tower.Upgrades
             public override int Tier => 4;
             public override string Name => "BananaStockTrader";
             public override string DisplayName => "Banana Stonks";
-            public override int Cost => 6700;
+            public override int Cost => 8750;
             public override string Description => "Increases farm and farmer income in range by 50%";
             public override string Icon => "BananaStonks-Icon";
             public override string Portrait => "BananaFarmer-004-Portrait";
@@ -131,7 +131,7 @@ namespace BananaFarmer.Tower.Upgrades
             public override int Tier => 5;
             public override string Name => "WolfOfMonkeyWallstreet";
             public override string DisplayName => "The Wolf of Monkey Wall Street";
-            public override int Cost => 65000;
+            public override int Cost => 77000;
             public override string Description => "Tripples worth of bananas in range!";
             public override string Icon => "MonkeyWallStreet-Icon";
             public override string Portrait => "BananaFarmer-005-Portrait";

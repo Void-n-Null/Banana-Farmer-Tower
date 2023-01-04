@@ -1,8 +1,8 @@
-﻿using Assets.Scripts.Models.Towers;
-using Assets.Scripts.Models.Towers.Behaviors;
-using Assets.Scripts.Models.Towers.Behaviors.Attack;
-using Assets.Scripts.Unity;
-using Assets.Scripts.Unity.Display;
+﻿using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack;
+using Il2CppAssets.Scripts.Unity;
+using Il2CppAssets.Scripts.Unity.Display;
 using BTD_Mod_Helper.Api.Display;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
@@ -107,7 +107,7 @@ namespace BananaFarmer.Tower.Upgrades
             public override int Tier => 5;
             public override string Name => "Robo Farmer";
             public override string DisplayName => "Robo Farmer";
-            public override int Cost => 22000;
+            public override int Cost => 11000;
             public override string Description => "Fully mechanical farmer. Has infinite banana collection range (and no arms).";
             public override string Icon => "RoboFarmer-Portrait";
             public override string Portrait => "RoboFarmer-Portrait";
