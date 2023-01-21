@@ -53,6 +53,8 @@ namespace BananaFarmer
                 towerModel.range = 45;
                 towerModel.AddBehavior(new CollectCashZoneModel("CollectCashZoneModel_",45,19,3,"",true,true,true,true));
             }
+
+            public override bool IsValidCrosspath(int[] tiers) => ModHelper.HasMod("Ultimate Crosspathing") ? true : base.IsValidCrosspath(tiers);
         }
     }
 }
