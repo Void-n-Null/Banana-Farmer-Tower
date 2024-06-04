@@ -23,22 +23,4 @@
     <ItemGroup>
       <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Reference Include="Assembly-CSharp">
-        <HintPath>..\..\..\..\SteamLibrary\steamapps\common\BloonsTD6\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
-      </Reference>
-      <Reference Include="Il2CppInterop.Runtime">
-        <HintPath>..\..\MelonLoader\Dependencies\SupportModules\Il2CppInterop.Runtime.dll</HintPath>
-      </Reference>
-      <Reference Include="Il2Cppmscorlib">
-        <HintPath>..\..\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
-      </Reference>
-      <Reference Include="MelonLoader">
-        <HintPath>..\..\MelonLoader\net35\MelonLoader.dll</HintPath>
-      </Reference>
-      <Reference Include="UnityEngine.CoreModule">
-        <HintPath>..\..\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
-      </Reference>
-    </ItemGroup>
 </Project>
