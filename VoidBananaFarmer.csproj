@@ -4,8 +4,8 @@
         <RootNamespace>BananaFarmer</RootNamespace>
         <Configurations>Debug;Release</Configurations>
         <Nullable>enable</Nullable>
-        <AssemblyName>BananaFarmer</AssemblyName>
         <LangVersion>latest</LangVersion>
+        <PackageId>VoidBananaFarmer</PackageId>
     </PropertyGroup>
     
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -19,8 +19,4 @@
     </PropertyGroup>
 
     <Import Project="..\btd6.targets" />
-
-    <ItemGroup>
-      <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
-    </ItemGroup>
 </Project>
