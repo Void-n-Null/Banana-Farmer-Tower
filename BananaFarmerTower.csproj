@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net48</TargetFramework>
-        <RootNamespace>BananaFarmer</RootNamespace>
+        <RootNamespace>VoidBananaFarmer</RootNamespace>
         <Configurations>Debug;Release</Configurations>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
-        <PackageId>VoidBananaFarmer</PackageId>
+        <PackageId>BananaFarmerTower</PackageId>
     </PropertyGroup>
     
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
