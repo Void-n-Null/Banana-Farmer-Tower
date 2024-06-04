@@ -53,7 +53,7 @@ namespace BananaFarmer.Tower.Upgrades
                 bananaGunWeapon.rate = .175f;
                 bananaGunProj.RemoveBehavior<DamageModel>();
                 bananaGunProj.RemoveBehavior<SetSpriteFromPierceModel>();
-                bananaGunProj.AddBehavior(new DamageModel("DamageModel_", 6, 10, true, true, true, BloonProperties.None,BloonProperties.None));
+                bananaGunProj.AddBehavior(new DamageModel("DamageModel_", 6, 10, true, true, true, BloonProperties.None,BloonProperties.None, false));
                 bananaGunProj.AddBehavior(new WindModel("WindModel_", 0, 200, 100, true, null, 0));
                 bananaGunProj.GetBehavior<ArriveAtTargetModel>().timeToTake = 0.075f;
                 bananaGunProj.pierce = 9;

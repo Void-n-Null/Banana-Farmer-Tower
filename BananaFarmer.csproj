@@ -26,7 +26,7 @@
 
     <ItemGroup>
       <Reference Include="Assembly-CSharp">
-        <HintPath>..\..\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+        <HintPath>..\..\..\..\SteamLibrary\steamapps\common\BloonsTD6\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
       </Reference>
       <Reference Include="Il2CppInterop.Runtime">
         <HintPath>..\..\MelonLoader\Dependencies\SupportModules\Il2CppInterop.Runtime.dll</HintPath>
