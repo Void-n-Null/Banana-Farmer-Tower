@@ -7,14 +7,13 @@ using BTD_Mod_Helper.Api.Display;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using UnityEngine;
-using static BananaFarmer.Helper;
-using MainTower = BananaFarmer.MainMod.MainTower;
+using static VoidBananaFarmer.Helper;
 
-namespace BananaFarmer.Tower.Upgrades
+namespace VoidBananaFarmer.Tower.Upgrades
 {
     public class TopPathUpgrades
     {
-        public class Tier1 : ModUpgrade<MainTower>
+        public class Tier1 : ModUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             public override int Path => TOP;
             public override int Tier => 1;
@@ -32,7 +31,7 @@ namespace BananaFarmer.Tower.Upgrades
             }
         }
 
-        public class Tier2 : ModUpgrade<MainTower>
+        public class Tier2 : ModUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             public override int Path => TOP;
             public override int Tier => 2;
@@ -51,7 +50,7 @@ namespace BananaFarmer.Tower.Upgrades
             }
         }
 
-        public class Tier3 : ModUpgrade<MainTower>
+        public class Tier3 : ModUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             public override int Path => TOP;
             public override int Tier => 3;
@@ -73,7 +72,7 @@ namespace BananaFarmer.Tower.Upgrades
             }
         }
 
-        public class Tier4 : ModUpgrade<MainTower>
+        public class Tier4 : ModUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             public override int Path => TOP;
             public override int Tier => 4;
@@ -101,7 +100,7 @@ namespace BananaFarmer.Tower.Upgrades
             }
         }
 
-        public class Tier5 : ModUpgrade<MainTower>
+        public class Tier5 : ModUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             public override int Path => TOP;
             public override int Tier => 5;

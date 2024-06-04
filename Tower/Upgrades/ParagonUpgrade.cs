@@ -8,15 +8,14 @@ using Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors;
 using Il2CppAssets.Scripts.Unity;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using static BananaFarmer.Helper;
-using MainTower = BananaFarmer.MainMod.MainTower;
+using static VoidBananaFarmer.Helper;
 using Il2Cpp;
 
-namespace BananaFarmer.Tower.Upgrades
+namespace VoidBananaFarmer.Tower.Upgrades
 {
     public class ParagonUpgrade
     {
-        public class Paragon : ModParagonUpgrade<MainTower>
+        public class Paragon : ModParagonUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             //public override string Name => "PotassiumSupreme";
             public override string DisplayName => "Potassium Supreme";

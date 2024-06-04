@@ -6,7 +6,7 @@ using Il2CppAssets.Scripts.Unity.Display;
 using BTD_Mod_Helper.Extensions;
 using UnityEngine;
 
-namespace BananaFarmer
+namespace VoidBananaFarmer
 {
     public static class Helper  
     {

@@ -2,12 +2,11 @@
 using Il2CppAssets.Scripts.Unity.Display;
 using BTD_Mod_Helper.Api.Display;
 using UnityEngine;
-using static BananaFarmer.Helper;
-using MainTower = BananaFarmer.MainMod.MainTower;
+using static VoidBananaFarmer.Helper;
 
 //DISPLAYSSSSSSs
 
-namespace BananaFarmer.Tower
+namespace VoidBananaFarmer.Tower
 {
     public class Displays
     {
@@ -55,7 +54,7 @@ namespace BananaFarmer.Tower
                 }
             }
 
-            public class ParagonDisplay : ModTowerDisplay<MainTower>
+            public class ParagonDisplay : ModTowerDisplay<BananaFarmerMod.BananaFarmerTower>
             {
                 public override string BaseDisplay => Game.instance.model.GetTowerFromId("SuperMonkey-130").display.guidRef;
 

@@ -6,16 +6,15 @@ using Il2CppAssets.Scripts.Models.Towers.Weapons;
 using Il2CppAssets.Scripts.Unity;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using MainTower = BananaFarmer.MainMod.MainTower;
 using Il2Cpp;
 
-namespace BananaFarmer.Tower.Upgrades
+namespace VoidBananaFarmer.Tower.Upgrades
 {
 
 
     public static class MiddlePathUpgrades
     {
-        public class Tier1 : ModUpgrade<MainTower>
+        public class Tier1 : ModUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             public override int Path => MIDDLE;
             public override int Tier => 1;
@@ -53,7 +52,7 @@ namespace BananaFarmer.Tower.Upgrades
 
 
         }
-        public class Tier2 : ModUpgrade<MainTower>
+        public class Tier2 : ModUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             public override int Path => MIDDLE;
             public override int Tier => 2;
@@ -70,7 +69,7 @@ namespace BananaFarmer.Tower.Upgrades
                 towerModel.GetAttackModel().weapons[0].projectile.GetBehavior<ArriveAtTargetModel>().timeToTake = .25f;
             }
         }
-        public class Tier3 : ModUpgrade<MainTower>
+        public class Tier3 : ModUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             public override int Path => MIDDLE;
             public override int Tier => 3;
@@ -90,7 +89,7 @@ namespace BananaFarmer.Tower.Upgrades
 
 
         }
-        public class Tier4 : ModUpgrade<MainTower>
+        public class Tier4 : ModUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             public override int Path => MIDDLE;
             public override int Tier => 4;
@@ -108,7 +107,7 @@ namespace BananaFarmer.Tower.Upgrades
                 towerModel.GetAttackModel().weapons[0].projectile.GetBehavior<WindModel>().speedMultiplier = 0.75f;
             }
         }
-        public class Tier5 : ModUpgrade<MainTower>
+        public class Tier5 : ModUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
             public override int Path => MIDDLE;
             public override int Tier => 5;

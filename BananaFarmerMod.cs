@@ -5,14 +5,14 @@ using Il2CppAssets.Scripts.Models.GenericBehaviors;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack;
-using BananaFarmer;
-using BananaFarmer.Tower;
+using VoidBananaFarmer;
 using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using MelonLoader;
-using ModHelperData = BananaFarmer.ModHelperData;
+using ModHelperData = VoidBananaFarmer.ModHelperData;
 using Il2CppAssets.Scripts.Models.TowerSets;
+using VoidBananaFarmer.Tower;
 
 #endregion
 
@@ -26,14 +26,14 @@ BTD6 Mods & Discussion discord for great and efficient problem solving and debug
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 [assembly: MelonColor(255,255,255,255)]
 [assembly: MelonAuthorColor(255,0,0,139)]
-[assembly: MelonInfo(typeof(MainMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
+[assembly: MelonInfo(typeof(BananaFarmerMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 
-namespace BananaFarmer
+namespace VoidBananaFarmer
 {
 
-    public class MainMod : BloonsTD6Mod
+    public class BananaFarmerMod : BloonsTD6Mod
     {
-        public class MainTower : ModTower
+        public class BananaFarmerTower : ModTower
         {
             public override string Name => "Banana Farmer";
             public override TowerSet TowerSet => TowerSet.Support;

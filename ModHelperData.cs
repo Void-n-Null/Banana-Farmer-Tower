@@ -1,4 +1,4 @@
-namespace BananaFarmer;
+namespace VoidBananaFarmer;
 
 public static class ModHelperData
 {
