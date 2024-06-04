@@ -17,11 +17,9 @@ namespace VoidBananaFarmer.Tower.Upgrades
     {
         public class Paragon : ModParagonUpgrade<BananaFarmerMod.BananaFarmerTower>
         {
-            //public override string Name => "PotassiumSupreme";
             public override string DisplayName => "Potassium Supreme";
             public override int Cost => 700000;
             public override string Description => "The embodiment of the monkey economy itself.";
-
             public override string Icon => "Paragon-Icon";
             public override string Portrait => "Paragon-Portrait";
 
@@ -58,7 +56,7 @@ namespace VoidBananaFarmer.Tower.Upgrades
                 bananaGunProj.pierce = 9;
                 bananaGunProj.ApplyDisplay<Displays.ProjectileDisplays.GoldenBananaProjectileDisplay>();
 
-
+                //Edit Banana Farm Cash and Collect Cash Zone Models
                 var BananaFarmAttackModel = Game.instance.model.GetTowerFromId("BananaFarm").GetAttackModel().Duplicate();
                 BananaFarmAttackModel.name = "BananaFarm_";
                 BananaFarmAttackModel.weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 40;

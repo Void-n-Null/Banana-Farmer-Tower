@@ -94,8 +94,11 @@ namespace VoidBananaFarmer.Tower.Upgrades
                 public override string BaseDisplay => BananaFarmerDisplay;
                 public override void ModifyDisplayNode(UnityDisplayNode node)
                 {
-                    foreach (Renderer genericRenderer in node.genericRenderers)
+                    foreach (var genericRenderer in node.genericRenderers)
+                    {
                         genericRenderer.material.mainTexture = GetTexture("CyborgFarmer_Texture");
+                        genericRenderer.SetOutlineColor(new Color(0, 0.45f, 0.45f, 0.45f));
+                    }
                 }
             }
         }

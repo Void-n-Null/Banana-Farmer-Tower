@@ -1,7 +1,4 @@
-﻿#region imports
-
-using System;
-using Il2CppAssets.Scripts.Models.GenericBehaviors;
+﻿using Il2CppAssets.Scripts.Models.GenericBehaviors;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack;
@@ -13,15 +10,6 @@ using MelonLoader;
 using ModHelperData = VoidBananaFarmer.ModHelperData;
 using Il2CppAssets.Scripts.Models.TowerSets;
 using VoidBananaFarmer.Tower;
-
-#endregion
-
-/*
-Credits
-Kosmic#4494 for some great sprite work
-1330 Studios discord for help with recommending and explaining certain behaviors (https://discord.gg/BxauzvUUjE)
-BTD6 Mods & Discussion discord for great and efficient problem solving and debugging (https://discord.gg/dV682SPepR)
-*/
 
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 [assembly: MelonColor(255,255,255,255)]
@@ -53,8 +41,8 @@ namespace VoidBananaFarmer
                 towerModel.range = 45;
                 towerModel.AddBehavior(new CollectCashZoneModel("CollectCashZoneModel_",45,19,3,"",true,true,true,true));
             }
-
-            public override bool IsValidCrosspath(int[] tiers) => ModHelper.HasMod("Ultimate Crosspathing") ? true : base.IsValidCrosspath(tiers);
+            
+            public override bool IsValidCrosspath(params int[] tiers) => ModHelper.HasMod("Ultimate Crosspathing") || base.IsValidCrosspath(tiers);
         }
     }
 }
