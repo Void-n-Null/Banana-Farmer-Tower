@@ -24,8 +24,8 @@ BTD6 Mods & Discussion discord for great and efficient problem solving and debug
 */
 
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
-[assembly: MelonColor(ConsoleColor.White)]
-[assembly: MelonAuthorColor(ConsoleColor.DarkBlue)]
+[assembly: MelonColor(255,255,255,255)]
+[assembly: MelonAuthorColor(255,0,0,139)]
 [assembly: MelonInfo(typeof(MainMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 
 namespace BananaFarmer
