@@ -8,7 +8,7 @@ on:
       - '*'
 
 env:
-  PROJECT_NAME: BananaFarmer
+  PROJECT_NAME: BananaFarmerTower
   MOD_HELPER_BRANCH: master
   
   MOD_HELPER_NAME: Btd6ModHelper
