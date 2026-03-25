@@ -3,6 +3,7 @@
 - Adds a new tower to Bloons Tower Defense 6, The Banana Farmer.
 - The Banana Farmer has 15 upgrades, 5 for each path
 - The Banana Farmer has a Paragon Upgrade.
+- Credit To Void-n-Null, this is just an update of his mod so that it works on v53
 
 # Example
 ![](https://raw.githubusercontent.com/Void-n-Null/Banana-Farmer-Tower/main/BananaFarmerShowoff.gif)
